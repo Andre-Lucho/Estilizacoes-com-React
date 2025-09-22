@@ -1,10 +1,10 @@
-# Implementação Global de CSS
+# Implementação padrão CSS-Module
 
-Esta implementação utiliza CSS global tradicional com pré-processamento SCSS.
+Esta implementação utiliza o padrão de estilização CSS-Module com pré-processamento SCSS.
 
 ## Principais Recursos
 
-- Utiliza folhas de estilo SCSS globais;
+- Utiliza o padrão de estilização CSS-Module de escopo local, evitando conflitos em nome de classe;
 - Implementa design responsivo com consultas de media-querys;
 - Suporte para: Tema escuro e Produtos Favoritos com persistência em localStorage;
 - Estrutura baseada em componentes com componentes reutilizáveis;
@@ -16,13 +16,11 @@ Esta implementação utiliza CSS global tradicional com pré-processamento SCSS.
 - `src/assets/` - Recursos de imagem;
 - `src/components/` - Componentes React;
 - `src/hooks/` - Hook Personalizado para lidar com o LocalStorage;
-- `src/styles/` - Contém todos os arquivos SCSS.
+- `src/styles/` - Contém todos os arquivos CSS-Module.
 
 ## Abordagem de Estilização
 
-- Estilos globais definidos em `main.scss`
-- Estilos específicos de componentes em arquivos SCSS separados
-- Variáveis ​​definidas em `variables.scss`
+- Estilos específicos em arquivos modulares tipo CSS-Module de escopo local em cada componente;
 
 ## Componentes
 
