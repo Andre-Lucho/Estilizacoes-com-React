@@ -1,20 +1,18 @@
-import { useEffect } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage';
+import { useContext, useEffect } from 'react';
+import { GlobalContext } from './GlobalContext';
 
 import { FaShoppingCart, FaMoon } from 'react-icons/fa';
 import { GrSun } from 'react-icons/gr';
-
 import '../styles/navbar.scss';
 
 const Navbar = () => {
-  const [darkTheme, setDarkTheme] = useLocalStorage('theme', false);
-  const root = document.getElementById('root');
+  const { setDarkTheme, darkTheme } = useContext(GlobalContext);
 
   useEffect(() => {
     if (darkTheme) {
-      root.classList.add('dark-theme');
+      document.body.classList.add('dark-theme');
     } else {
-      root.classList.remove('dark-theme');
+      document.body.classList.remove('dark-theme');
     }
   }, [darkTheme]);
 
@@ -23,9 +21,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${darkTheme ? 'dark-theme' : ''}`}>
       <nav className="nav-container">
-        <a>React Shopping</a>
+        <a>+PraTI - Shopping</a>
         <div className="icons-container">
           {darkTheme ? (
             <FaMoon className="icon" onClick={handleTheme} />

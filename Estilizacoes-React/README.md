@@ -1,74 +1,46 @@
-# Buscador de Filmes React - +PraTI
+Tarefa: Implemente a mesma tela em 4 versões ou telas diferentes para cada uma das
+versões:
 
-Buscador de filmes desenvolvido em React + Sass realizado como atividade do do módulo React do Curso Trilha Dev. Full Stack Jr. turma - 2025​.
+1. CSS Global · 2. CSS Modules · 3. Tailwind CSS · 4. styled-components.
 
-O projeto consiste em um buscador de filmes que utiliza a API do OMDB (The Open Movie Database) em: https://www.omdbapi.com/).
+Exemplo de Tela a construir:
 
-Você pode pesquisar filmes e visualizar detalhes de cada filme pesquisado, além de adicionar e remover filmes, através de sua pesquisa, que ficará armazenada em sua Página des favoritos, com uma interface leve, moderna e responsiva.
+- Navbar (fixa): logo, toggle de tema (claro/escuro com persistência) e badge do carrinho.
+- Grid de produtos (cards) responsivo: ≤480px: 1 col · 481–768px: 2 cols · 769–1024px: 3
+  cols · ≥1025px: 4 cols.
+- Card de produto: imagem 1:1 com espaço reservado, título 2 linhas com ellipsis, preço,
+  rating (★), tag (“Novo”/“Promo”), botão “Adicionar” com variantes solid/outline/ghost.
 
-## 1. Funcionalidades Implementadas:
+Estados/Interações obrigatórios:
 
-a) Buscar filmes por nome;  
-b) Visualizar detalhes de cada filme;  
-c) Adicionar e remover filmes favoritos diretamente, através da:
+- Hover (elevação/sombra), focus visível, disabled, loading com skeleton (simule atraso).
+- Dark mode aplicado a cores/sombras/bordas.
+  Acessibilidade:
+- Navegação por teclado, `aria-*` onde fizer sentido, contraste ≥ 4.5:1.
+  Animações:
+- Transições de 150–250ms (usar transform/opacity).
 
-- Página de pesquisa (Dashboard) e
-- Página de detalhes (Modal);
+Dados:
 
-d) Página exclusiva para seus filmes favoritos, onde podemos visualizar os favoritos armazenados e também excluí-los por essa página.
+- Exibir 6 produtos (id, título, preço, rating, tag, imagem placeholder). Imagens com lazy
+  loading.
 
-## 2. Tecnologias utilizadas:
+Entregáveis:
 
-React - Hooks, Custom Hooks, Formulários e Containers;  
- React Router DOM;  
- Vite;  
- ESLint;  
- Sass.
+- Quatro pastas: `01-css-global/`, `02-css-modules/`, `03-tailwind/`,
+  `04-styled-components/`.
+- Cada pasta com os componentes (`Navbar`, `ProductCard`, `Button`, `Skeleton`) e um
+  README curto.
 
-## 3. Instalação
+Restrições:
 
-Para executá-lo, é necessário ter instalado em sua máquina: ferramena de versionamento **Git**, o **Node.js** e um **gerenciador de pacotes** de sua escolha (npm, pnpm...).
+- Em cada versão, use apenas a técnica indicada (global, modules, utilitários, CSS-in-JS com`ThemeProvider` e props).
 
-A) Abra o seu terminal em uma pasta deseaja e Clone o repositório:
+Critérios de aceite:
 
-```
-git clone https://github.com/Andre-Lucho/App-React-OMDB.git
-```
-
-B) Acesse a pasta do projeto:
-
-```
-cd App-React-OMDB/app-react-omdb
-```
-
-C) Instale as dependências:
-
-```
-npm install
-```
-
-D) Configure um arquivo .env:  
-Crie um arquivo do tipo '.env' na raiz do projeto e adicione suas chaves da API OMDB no corpo do arquivo:
-
-```
-VITE_API_KEY='SEU_TOKEN_AQUI'
-```
-
-Obs.: O token é composto por ums string com números e letras fornecidas pela equipe da OMDB, através de um cadastramento.
-
-E) Execute o projeto:
-
-```
-npm start
-```
-
-O projeto estará disponível em http://localhost:portal-local/ (informado pelo Vite).
-
-## 4. Melhorias futuras
-
-A) Melhorias em estilizações, especilamente para mobiles.  
-B) Implementações de mais informações e imagens de filmes, atores e diretores, através do consumo de outra API - TMDP
-
-## Autores
-
-- [@Andre-Lucho](https://github.com/Andre-Lucho)
+- Breakpoints exatamente como descritos.
+- Dark mode com persistência.
+- Focus ring visível.
+- Skeleton sem layout shift.
+- Variantes do botão consistentes nos dois temas.
+- Organização clara de pastas e uso de tokens (cores, espaçamentos, raio, sombras).
