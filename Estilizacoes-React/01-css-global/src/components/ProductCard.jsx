@@ -49,8 +49,12 @@ const ProductCard = ({ product, i }) => {
     <li className={`product-card-container ${darkTheme ? 'dark-theme' : ''}`}>
       <img src={image} alt={`imagem de ${name}`} className="product-img" />
       <nav className="product-nav-items">
-        <span>Promo</span>
-        <span onClick={() => toggleFavorite(id)} style={{ cursor: 'pointer' }}>
+        <span className="promo">Promo</span>
+        <span
+          className="fav-icon"
+          onClick={() => toggleFavorite(id)}
+          style={{ cursor: 'pointer' }}
+        >
           {isFavorite ? <TiStarFullOutline /> : <TiStarOutline />}
         </span>
       </nav>

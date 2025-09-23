@@ -63,8 +63,12 @@ const ProductCard = ({ product, i }) => {
         className={styles.productImg}
       />
       <nav className={styles.productNavItems}>
-        <span>Promo</span>
-        <span onClick={() => toggleFavorite(id)} style={{ cursor: 'pointer' }}>
+        <span className={styles.promo}>Promo</span>
+        <span
+          className={styles.favIcon}
+          onClick={() => toggleFavorite(id)}
+          style={{ cursor: 'pointer' }}
+        >
           {isFavorite ? <TiStarFullOutline /> : <TiStarOutline />}
         </span>
       </nav>

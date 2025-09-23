@@ -21,7 +21,9 @@ const ProductGrid = () => {
 
   return (
     <div className="product-grid-container">
-      <ul className="product-container">{renderProducts()}</ul>
+      <ul className="product-container">
+        {products.length > 0 ? renderProducts() : null}
+      </ul>
     </div>
   );
 };

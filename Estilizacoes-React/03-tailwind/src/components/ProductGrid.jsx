@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
 import { productData } from '../productData';
 
-import styles from '../styles/ProductGrid.module.scss';
-
 const ProductGrid = () => {
   const [products, setProducts] = useState([]);
 
@@ -20,8 +18,8 @@ const ProductGrid = () => {
   };
 
   return (
-    <div className={styles.productGridContainer}>
-      <ul className={styles.productContainer}>
+    <div className="grid-area-product-grid w-[95%] mx-auto my-6">
+      <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {products.length > 0 ? renderProducts() : null}
       </ul>
     </div>
