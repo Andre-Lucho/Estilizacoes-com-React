@@ -1,7 +1,20 @@
-Tarefa: Implemente a mesma tela em 4 versões ou telas diferentes para cada uma das
+# Estilizações em React - Diversas abordagens
+
+Estilização de uma tela em React tela utilizando diversas abordagens. São elas:
+
+1. CSS Global - com pré-processamento SCSS;
+2. CSS Modules;
+3. Framework Tailwind CSS;
+4. Styled Components.
+
+Esse projeto foi realizado como atividade final do módulo React do Curso Trilha Dev. Full Stack Jr. turma - 2025​.
+
+## Tarefa Proposta
+
+Implemente a mesma tela em 4 versões ou telas diferentes para cada uma das
 versões:
 
-1. CSS Global · 2. CSS Modules · 3. Tailwind CSS · 4. styled-components.
+1. CSS Global · 2. CSS Modules · 3. Tailwind CSS · 4. Styled-components.
 
 Exemplo de Tela a construir:
 
