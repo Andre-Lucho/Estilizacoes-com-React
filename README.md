@@ -57,3 +57,10 @@ Critérios de aceite:
 - Skeleton sem layout shift.
 - Variantes do botão consistentes nos dois temas.
 - Organização clara de pastas e uso de tokens (cores, espaçamentos, raio, sombras).
+
+## Executando o projeto
+
+No terminal, acessar a pasta do projeto e do sub-projeto, conforme o tipo de estilização desejada;
+
+- Digitar: npm install - para instalar os pacotes necessários;
+- Digitar: npm start - para rodar o projeto no navegador.
