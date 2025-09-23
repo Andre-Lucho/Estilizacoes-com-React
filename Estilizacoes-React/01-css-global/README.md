@@ -28,7 +28,7 @@ Esta implementação utiliza CSS global tradicional com pré-processamento SCSS.
 
 - Barra de navegação com alternância de tema persistente ;
 - ProductGrid com colunas responsivas;
-- ProductCard com imagem, título com ellipsis , preço, icone de rating persistente;
+- ProductCard com imagem, título com ellipsis , preço, icone de favoritos persistente;
 - Botão com variantes solid,outline e ghost;
 - Componentes de carregamento tipo Skeleton.
 

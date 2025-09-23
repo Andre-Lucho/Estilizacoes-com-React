@@ -1,0 +1,66 @@
+/* Basic Reset */
+*,
+section,
+h1,
+h2,
+div,
+p,
+a,
+li,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+#root {
+  display: grid;
+  grid-template:
+    "navbar" auto
+    "product-grid" 1fr
+    "footer" auto
+    / 100%;
+  min-height: 100vh;
+}
+
+/* Dark theme styles for body */
+.dark body {
+  background-color: #222;
+  color: #eee;
+}
+
+h1,
+h2 {
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.grid-area-navbar {
+  grid-area: navbar;
+}
+.grid-area-product-grid {
+  grid-area: product-grid;
+}
+.grid-area-footer {
+  grid-area: footer;
+}

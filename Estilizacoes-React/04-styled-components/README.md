@@ -1,27 +1,25 @@
-# Implementação padrão CSS-Module
+# Implementação com Styled Components
 
-Esta implementação utiliza o padrão de estilização CSS-Module com pré-processamento SCSS.
+Esta implementação utiliza Styled Components para sua estilização.
 
 ## Principais Recursos
 
-- Essa versão do projeto utiliza o padrão de estilização CSS-Module, mantendo a mesma estilização das demais versões do projetos
-- Por ser de escopo local, essa abordagem evita conflitos em nome de classe, em comparação com a implementação CSS-Global;
+- Essa versão do projeto utiliza o Styled Components em sua estilização, mantendo a mesma estilização das demais versões do projetos;
 - Implementa design responsivo com consultas de media-querys;
 - Suporte para: Tema escuro e Produtos Favoritos com persistência em localStorage;
-- Estrutura baseada em componentes com componentes reutilizáveis;
+- Estrutura baseada em componentes reutilizáveis;
 - Focus ring para acessibilidade;
 - Estados de carregamento tipo Skeleton para evitar mudanças bruscas de layout.
 
 ## Estrutura
 
 - `src/assets/` - Recursos de imagem;
-- `src/components/` - Componentes React;
+- `src/components/` - Componentes React, com estilização via Styled Components aplicados diretamente ;
 - `src/hooks/` - Hook Personalizado para lidar com o LocalStorage;
-- `src/styles/` - Contém todos os arquivos CSS-Module.
 
 ## Abordagem de Estilização
 
-- Estilos específicos em arquivos modulares tipo CSS-Module de escopo local em cada componente;
+- Estilos aplicados diretamente nos componentes através do Styled Components;
 
 ## Componentes
 
